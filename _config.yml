@@ -70,4 +70,4 @@ theme: landscape
 deploy:
   type: git
   repo: https://github.com/ming-liu/ming-liu.github.io.git
-  branch: master
+  branch: github
