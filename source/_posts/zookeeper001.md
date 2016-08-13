@@ -85,7 +85,7 @@ zookeeper的接口非常精简。不过，使用这些接口，可以实现更�
 ***性能***
 Zookeeper被设计成高性能的。但是，真相呢？Yahoo的Zookeeper开发团队的研究结果表明这是真的。(查看Zookeeper不同读写比的吞吐量。) 在读远大于写的场景中，是非常地高性能,因为写操作包含了所有服务器之间状态的同步。(读远高于写是分布式服务的典型场景。)
 
-<img src="../images/zkperfRW-3.2.jpg">
+<img src="../images/zkperfRW-3.2.jpg" />
 图Zookeeper不同读写比下的吞吐量,是使用的Zookeeper 3.2版本的吞吐量图。Zookeeper运行在2Ghz的Xeon处理器和2个SATA 15K RPM硬盘上。1个硬盘用专门用来作为zookeeper的日志硬盘。快照落地到系统硬盘里。读、写的大小都是1k。"服务器"表示zookeeper集群服务器的数量，这些服务器共同提供服务。约30个其他的服务器用来模拟客户端。zookeeper集群配置，leader不接受客户端的连接。
 
 基准也表示出可靠性。图"出现异常时的可靠性"，显示出了部署节点如何应对各种失败。图中标记出的事件是：
@@ -97,11 +97,18 @@ Zookeeper被设计成高性能的。但是，真相呢？Yahoo的Zookeeper开发
 5、另外一个leader失败。
 
 可靠性
-为了展示当错误引入时，系统随着时间的表现。我们运行了一组包含7台服务器的zookeeper服务。
+为了展示当错误引入时，系统随着时间的表现。我们运行了一组包含7台服务器的zookeeper服务。我们运行和之前相同的饱和度，不过这次，保持写的比率在30%,这个比例是个保守估计。
 
-Reliability
-To show the behavior of the system over time as failures are injected we ran a ZooKeeper service made up of 7 machines. We ran the same saturation benchmark as before, but this time we kept the write percentage at a constant 30%, which is a conservative ratio of our expected workloads.
+<img src="../images/zkperfreliability.jpg" />
 
+图中能看到一些关键点。首先，如果follower失败，并且快速恢复，那么Zookeeper仍然能够维持一个很高的吞吐。更重要的，leader选举算法，让整个系统快速恢复，避免吞吐量大幅度降落。据我们观察，Zookeeper用了不到200ms来选举出leader。第三点，当follower恢复了，一旦开始处理请求，Zookeeper可以再次提升吞吐。
+
+
+
+***Zookeeper项目***
+Zookeeper在很多工业应用有成功的案例。在雅虎，使用Zookeeper为雅虎消息Broker提供协调和故障恢复服务。雅虎的消息Broker是一个高度可扩展的发布-订阅系统，管理着上千的topic,用于同步和数据传递。在雅虎爬虫的抓取服务中也用到了，也用来管理故障恢复。一些雅虎的广告系统也用Zookeeper来实现可靠服务。
+
+鼓励所有的用户和开发者加入社区来贡献专业技能。参见Apache上的Zookeeper项目来获得更多信息。
 
 
 [原文](http://zookeeper.apache.org/doc/r3.4.8/zookeeperOver.html)
