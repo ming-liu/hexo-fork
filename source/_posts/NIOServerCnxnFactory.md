@@ -22,17 +22,19 @@ Zookeeper 默认的ServerCnxnFactory的实现。顾名思义，采用非阻塞�
 SelectorThread->AbstractSelectThread->ZooKeeperThread
 ##### 2.2 解释 #####
 + a) 当一个acceptThread把SocketChanel传给selectorThread时,调用的addAcceptedConnection，这个方法是把socketChannel加到acceptedQueue里,每个acceptThread有一个LinkedBlockingQueue类型的队列。(而且我看的版本LinkedBlockingQueue没设置大小。)
-+ b) acceptThread的run方法里。
++ b) selectThread的run方法里。
 	1. select 
-	2. 把readable和writable的selectionKey封装成IOWorkRequest对象,放到workerPool(work threads)里。
+	2. 把readable和writable的selectionKey封装成IOWorkRequest对象,放到workerPool(work threads)里。放到workerPool之前,把selectionKey的interest ops清除,及NIOServerCnxn disableSelectable。
 	3. 把acceptedQueue的socket的OP_READ注册到selector上。
-	4. 处理updateQueue 目前未知...
+	4. 处理updateQueue 。workThread在处理完IO后，把SelectionKey加到updateQueue里。在这里恢复SelectionKey的interestOps。
 
 ### 3、0-m个 work threads.###
 ##### 3.1 结构 ##### 
 org.apache.zookeeper.server.WorkerService,其中实例变量:ArrayList<ExecutorService> workers = new ArrayList<ExecutorService>();
 ##### 3.2 解释 #####
-
++ a) 处理IO
++ b) cnxn.enableSelectable
++ c) 把key加到updateQueue中。
 
 ### 4、connection expiration thread ###
 类结构ConnectionExpirerThread->ZooKeeperThread
