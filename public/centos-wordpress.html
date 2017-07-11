@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>centos_wordpress | ming-liu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Aliyun Ecs Centos 64bit .install wordpress1、install apache1.1 查询是否安装，若没有返回信息则没有安装。    1rpm -qa httpd
+1.2 安装apache。    1yum install httpd -y
+1.3 启动    123service httpd startservice httpd stopservice ht">
+<meta property="og:type" content="article">
+<meta property="og:title" content="centos_wordpress">
+<meta property="og:url" content="http://yoursite.com/centos-wordpress.html">
+<meta property="og:site_name" content="ming-liu">
+<meta property="og:description" content="Aliyun Ecs Centos 64bit .install wordpress1、install apache1.1 查询是否安装，若没有返回信息则没有安装。    1rpm -qa httpd
+1.2 安装apache。    1yum install httpd -y
+1.3 启动    123service httpd startservice httpd stopservice ht">
+<meta property="og:updated_time" content="2016-02-20T02:15:02.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="centos_wordpress">
+<meta name="twitter:description" content="Aliyun Ecs Centos 64bit .install wordpress1、install apache1.1 查询是否安装，若没有返回信息则没有安装。    1rpm -qa httpd
+1.2 安装apache。    1yum install httpd -y
+1.3 启动    123service httpd startservice httpd stopservice ht">
+  
+    <link rel="alternate" href="/atom.xml" title="ming-liu" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">ming-liu</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-centos-wordpress" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/centos-wordpress.html" class="article-date">
+  <time datetime="2016-02-18T05:10:40.000Z" itemprop="datePublished">2016-02-18</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      centos_wordpress
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Aliyun_Ecs_Centos_64bit_-install_wordpress"><a href="#Aliyun_Ecs_Centos_64bit_-install_wordpress" class="headerlink" title="Aliyun Ecs Centos 64bit .install wordpress"></a>Aliyun Ecs Centos 64bit .install wordpress</h3><h4 id="1_u3001install_apache"><a href="#1_u3001install_apache" class="headerlink" title="1、install apache"></a>1、install apache</h4><p>1.1 查询是否安装，若没有返回信息则没有安装。<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa httpd</span><br></pre></td></tr></table></figure></p>
+<p>1.2 安装apache。<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install httpd -y</span><br></pre></td></tr></table></figure></p>
+<p>1.3 启动<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">service httpd start</span><br><span class="line">service httpd stop</span><br><span class="line">service httpd restart</span><br></pre></td></tr></table></figure></p>
+<h4 id="2_u3001install_mysql"><a href="#2_u3001install_mysql" class="headerlink" title="2、install mysql"></a>2、install mysql</h4><p>2.1 查询mysql是否安装<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rpm -qa mysql</span><br></pre></td></tr></table></figure></p>
+<p>2.2 查询yum服务器上mysql<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum list | grep mysql</span><br></pre></td></tr></table></figure></p>
+<p>2.3 安装mysql<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y mysql-server mysql-devel mysql</span><br></pre></td></tr></table></figure></p>
+<p>2.4 mysql是否自动启动,设置mysqld自动启动<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chkconfig --list | grep mysql&#10;chkconfig mysqld on</span><br></pre></td></tr></table></figure></p>
+<p>2.5 启动mysql<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">service mysqld start</span><br></pre></td></tr></table></figure></p>
+<p>2.6 修改密码<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqladmin -u root password &#39;&#39;</span><br></pre></td></tr></table></figure></p>
+<h4 id="3_u3001install_php"><a href="#3_u3001install_php" class="headerlink" title="3、install php"></a>3、install php</h4><p>3.1 安装php<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install php php-devel</span><br></pre></td></tr></table></figure></p>
+<p>3.2 安装php扩展<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install php-gd php-imap php-ldap php-odbc php-pear php-xml php-xmlrpc</span><br></pre></td></tr></table></figure></p>
+<h4 id="4_u3001install_ftp"><a href="#4_u3001install_ftp" class="headerlink" title="4、install ftp"></a>4、install ftp</h4><p>4.1 install ftp<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install vsftpd</span><br></pre></td></tr></table></figure></p>
+<p>4.2 取消匿名登录<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/vsftpd/vsftpd.conf&#10;anonymous_enable=NO</span><br></pre></td></tr></table></figure></p>
+<p>4.3 创建一个用户<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd ftpuser &#10;passwd ftpuser</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/centos-wordpress.html" data-id="cj506zrnq000izgjblkazm7qg" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/hexo-guide.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          hexo guide
+        
+      </div>
+    </a>
+  
+  
+    <a href="/nio.html" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">NIO</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ActiveMQ/">ActiveMQ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zookeeper/">zookeeper</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/ActiveMQ/" style="font-size: 10px;">ActiveMQ</a> <a href="/tags/zookeeper/" style="font-size: 20px;">zookeeper</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/NIOServerCnxnFactory.html">NIOServerCnxnFactory</a>
+          </li>
+        
+          <li>
+            <a href="/activemq-in-action-index.html">activemq-in-action-index</a>
+          </li>
+        
+          <li>
+            <a href="/activemq-install.html">activemq-install</a>
+          </li>
+        
+          <li>
+            <a href="/activemq.html">ActiveMQ</a>
+          </li>
+        
+          <li>
+            <a href="/zookeeper4.html">zookeeper4</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 ming-liu<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>

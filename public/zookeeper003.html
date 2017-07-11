@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>获得源码 | ming-liu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="1. 可以从github上直接clone下来,当然我们以学习为主，可能会做些笔记，建议Fork一下，从自己的仓库clone。    1git clone https://github.com/ming-liu/zookeeper.git
+2. 安装ant Ant下载  Ant手册
+3. 生成eclipse项目    1ant eclipse
+4. 导入eclipse    12import-&amp;gt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="获得源码">
+<meta property="og:url" content="http://yoursite.com/zookeeper003.html">
+<meta property="og:site_name" content="ming-liu">
+<meta property="og:description" content="1. 可以从github上直接clone下来,当然我们以学习为主，可能会做些笔记，建议Fork一下，从自己的仓库clone。    1git clone https://github.com/ming-liu/zookeeper.git
+2. 安装ant Ant下载  Ant手册
+3. 生成eclipse项目    1ant eclipse
+4. 导入eclipse    12import-&amp;gt">
+<meta property="og:image" content="http://yoursite.com/../images/zk-over.jpg">
+<meta property="og:image" content="http://yoursite.com/../images/zk-count.jpg">
+<meta property="og:updated_time" content="2016-08-18T01:00:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="获得源码">
+<meta name="twitter:description" content="1. 可以从github上直接clone下来,当然我们以学习为主，可能会做些笔记，建议Fork一下，从自己的仓库clone。    1git clone https://github.com/ming-liu/zookeeper.git
+2. 安装ant Ant下载  Ant手册
+3. 生成eclipse项目    1ant eclipse
+4. 导入eclipse    12import-&amp;gt">
+  
+    <link rel="alternate" href="/atom.xml" title="ming-liu" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">ming-liu</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-zookeeper003" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/zookeeper003.html" class="article-date">
+  <time datetime="2016-07-09T04:17:49.000Z" itemprop="datePublished">2016-07-09</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      获得源码
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>1.</strong> 可以从<a href="https://github.com/apache/zookeeper" target="_blank" rel="external">github</a>上直接clone下来,当然我们以学习为主，可能会做些笔记，建议<code>Fork</code>一下，从自己的仓库clone。<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/ming-liu/zookeeper.git</span><br></pre></td></tr></table></figure></p>
+<p><strong>2.</strong> 安装ant <a href="http://ant.apache.org/bindownload.cgi" target="_blank" rel="external">Ant下载</a>  <a href="http://ant.apache.org/manual/index.html" target="_blank" rel="external">Ant手册</a></p>
+<p><strong>3.</strong> 生成eclipse项目<br>    <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ant eclipse</span><br></pre></td></tr></table></figure></p>
+<p><strong>4.</strong> 导入eclipse<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import-&gt;General-&gt;Existing Projects <span class="keyword">in</span> Workspace</span><br><span class="line">导入之后，通常会有很多编译错误，特别要注意，一定要使用JDK1.<span class="number">7</span>以上版本。检查下.settings/org.eclipse.jdt.core.prefs，里面有<span class="number">6.0</span>/<span class="number">1.6</span>的全部替换成<span class="number">1.7</span>。</span><br></pre></td></tr></table></figure></p>
+<p><strong>5.</strong> 先概览下包结构<br>    <img src="../images/zk-over.jpg" style="height:500px;"><br><strong>6.</strong> 读源码思路。大概先浏览下包里的内容，核心代码应该在<code>org.apache.zookeeper</code>下。那接下来就逐个击破吧，看看这个包下有多少个java类。<br>    <img src="../images/zk-count.jpg" style="height:50px;width:400px;"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/zookeeper003.html" data-id="cj506zrms0005zgjbky4tllz5" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/zookeeper002.html" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          ZooKeeper入门指南
+        
+      </div>
+    </a>
+  
+  
+    <a href="/zookeeper001.html" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">zookeeper概览</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/ActiveMQ/">ActiveMQ</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/zookeeper/">zookeeper</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/ActiveMQ/" style="font-size: 10px;">ActiveMQ</a> <a href="/tags/zookeeper/" style="font-size: 20px;">zookeeper</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/02/">February 2016</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/NIOServerCnxnFactory.html">NIOServerCnxnFactory</a>
+          </li>
+        
+          <li>
+            <a href="/activemq-in-action-index.html">activemq-in-action-index</a>
+          </li>
+        
+          <li>
+            <a href="/activemq-install.html">activemq-install</a>
+          </li>
+        
+          <li>
+            <a href="/activemq.html">ActiveMQ</a>
+          </li>
+        
+          <li>
+            <a href="/zookeeper4.html">zookeeper4</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 ming-liu<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
