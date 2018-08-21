@@ -36,6 +36,12 @@ ctx.lineTo(12,15);
 ctx.lineTo(17,8);
 ctx.stroke();
 
+ctx.fillStyle='#fed06a';
+ctx.beginPath();
+ctx.arc(32,12,9,0,2*Math.PI);
+ctx.arc(32,12,7,0,2*Math.PI);
+ctx.fill("evenodd");
+
 var result=document.getElementById('result');
 result.innerHTML = canvas.toDataURL();
 </script>
