@@ -5,6 +5,8 @@ tags:
 ---
 
 
-``` nodejs
+``` java
+npm uninstall hexo-cli -g
+npm install hexo-cli -g
 hexo new 'postName'
 ```

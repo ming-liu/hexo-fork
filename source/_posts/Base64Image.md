@@ -7,7 +7,9 @@ tags: javascript base64 image
 #### 小图标制作小技巧 ####
 
 ##### 思路 #####
+
 > 很多图标网上搜不到,或是搜到又不是自己想要的,自己要动手制作,又需要一些图片处理软件,不是很方便,不如换个思路。利用js的canvas画图,画完之后再转为base64,即可在css中直接使用了。很是方便。
+
 
 #### 实现 ####
 
@@ -48,3 +50,5 @@ result.innerHTML = canvas.toDataURL();
 
 </body>
 </html>
+
+```

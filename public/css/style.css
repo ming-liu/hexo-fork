@@ -630,6 +630,9 @@ a.article-title:hover {
   margin: 1.6em 20px;
   text-align: center;
 }
+.article-entry blockquote p {
+  text-align: left;
+}
 .article-entry blockquote footer {
   font-size: 14px;
   margin: 1.6em 0;

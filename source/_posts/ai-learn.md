@@ -36,3 +36,4 @@ Octave
 18. matrices
 19. transpose
 20. algebra
+21. polynomial
