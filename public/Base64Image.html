@@ -8,8 +8,7 @@
   <meta name="description" content="小图标制作小技巧思路
 很多图标网上搜不到,或是搜到又不是自己想要的,自己要动手制作,又需要一些图片处理软件,不是很方便,不如换个思路。利用js的canvas画图,画完之后再转为base64,即可在css中直接使用了。很是方便。
 
-实现`` javascript
-1&amp;gt; 打开w3school的在线编辑http://www.w3school.com.cn/tiy/t.asp?f=html5_can">
+实现``` javascript1&amp;gt; 打开w3school的在线编辑 http://www.w3school.com.cn/tiy/t.asp?f=html5_ca">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Base64Image">
 <meta property="og:url" content="http://yoursite.com/Base64Image.html">
@@ -17,16 +16,14 @@
 <meta property="og:description" content="小图标制作小技巧思路
 很多图标网上搜不到,或是搜到又不是自己想要的,自己要动手制作,又需要一些图片处理软件,不是很方便,不如换个思路。利用js的canvas画图,画完之后再转为base64,即可在css中直接使用了。很是方便。
 
-实现`` javascript
-1&amp;gt; 打开w3school的在线编辑http://www.w3school.com.cn/tiy/t.asp?f=html5_can">
-<meta property="og:updated_time" content="2018-02-12T13:03:26.991Z">
+实现``` javascript1&amp;gt; 打开w3school的在线编辑 http://www.w3school.com.cn/tiy/t.asp?f=html5_ca">
+<meta property="og:updated_time" content="2018-09-24T07:17:20.578Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Base64Image">
 <meta name="twitter:description" content="小图标制作小技巧思路
 很多图标网上搜不到,或是搜到又不是自己想要的,自己要动手制作,又需要一些图片处理软件,不是很方便,不如换个思路。利用js的canvas画图,画完之后再转为base64,即可在css中直接使用了。很是方便。
 
-实现`` javascript
-1&amp;gt; 打开w3school的在线编辑http://www.w3school.com.cn/tiy/t.asp?f=html5_can">
+实现``` javascript1&amp;gt; 打开w3school的在线编辑 http://www.w3school.com.cn/tiy/t.asp?f=html5_ca">
   
     <link rel="alternate" href="/atom.xml" title="ming-liu" type="application/atom+xml">
   
@@ -98,8 +95,7 @@
         <h4 id="u5C0F_u56FE_u6807_u5236_u4F5C_u5C0F_u6280_u5DE7"><a href="#u5C0F_u56FE_u6807_u5236_u4F5C_u5C0F_u6280_u5DE7" class="headerlink" title="小图标制作小技巧"></a>小图标制作小技巧</h4><h5 id="u601D_u8DEF"><a href="#u601D_u8DEF" class="headerlink" title="思路"></a>思路</h5><blockquote>
 <p>很多图标网上搜不到,或是搜到又不是自己想要的,自己要动手制作,又需要一些图片处理软件,不是很方便,不如换个思路。利用js的canvas画图,画完之后再转为base64,即可在css中直接使用了。很是方便。</p>
 </blockquote>
-<h4 id="u5B9E_u73B0"><a href="#u5B9E_u73B0" class="headerlink" title="实现"></a>实现</h4><p><code>`` javascript
-1&gt; 打开w3school的在线编辑</code><a href="http://www.w3school.com.cn/tiy/t.asp?f=html5_canvas`" target="_blank" rel="external">http://www.w3school.com.cn/tiy/t.asp?f=html5_canvas`</a><br>2&gt; copy下面代码<br>&lt;!DOCTYPE HTML&gt;</p>
+<h4 id="u5B9E_u73B0"><a href="#u5B9E_u73B0" class="headerlink" title="实现"></a>实现</h4><p>``` javascript<br>1&gt; 打开w3school的在线编辑 <a href="http://www.w3school.com.cn/tiy/t.asp?f=html5_canvas" target="_blank" rel="external">http://www.w3school.com.cn/tiy/t.asp?f=html5_canvas</a><br>2&gt; copy下面代码<br>&lt;!DOCTYPE HTML&gt;</p>
 <html><br><body><br><br><canvas id="myCanvas" style="border:solid 1px black"></canvas><br><div id="result"></div><br><script type="text/javascript"><br><br>var canvas=document.getElementById(‘myCanvas’);<br>var ctx=canvas.getContext(‘2d’);<br>ctx.strokeStyle=’#fed06a’;<br>ctx.arc(12,12,10,0,2<em>Math.PI);<br>ctx.stroke();<br>ctx.fillStyle=”#fed06a”;<br>ctx.fill();<br>ctx.strokeStyle=’white’;<br>ctx.moveTo(7,11);<br>ctx.lineWidth=2;<br>ctx.lineTo(12,15);<br>ctx.lineTo(17,8);<br>ctx.stroke();<br><br>ctx.fillStyle=’#fed06a’;<br>ctx.beginPath();<br>ctx.arc(32,12,9,0,2</em>Math.PI);<br>ctx.arc(32,12,7,0,2*Math.PI);<br>ctx.fill(“evenodd”);<br><br>var result=document.getElementById(‘result’);<br>result.innerHTML = canvas.toDataURL();<br></script><br><br></body><br></html>
 
       

@@ -12,7 +12,7 @@ tags: javascript base64 image
 #### 实现 ####
 
 ``` javascript
-1> 打开w3school的在线编辑 `http://www.w3school.com.cn/tiy/t.asp?f=html5_canvas`
+1> 打开w3school的在线编辑 http://www.w3school.com.cn/tiy/t.asp?f=html5_canvas
 2> copy下面代码
 <!DOCTYPE HTML>
 <html>
