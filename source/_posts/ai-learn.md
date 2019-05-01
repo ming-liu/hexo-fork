@@ -37,3 +37,7 @@ Octave
 19. transpose
 20. algebra
 21. polynomial
+22. normal equation
+23. X' X prime
+24. resort ,resort to
+25. optimum
